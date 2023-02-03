@@ -1,0 +1,257 @@
+/* Base Styles CSS Start */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Colors */
+
+:root {
+  --primary: #001648;
+  --secondary: #1dc68d;
+  --dark: #000000;
+  --light: #ffffff;
+}
+
+.gradient {
+  background: linear-gradient(106.71deg, #1dc68d 8.45%, #1d6bc6 141.94%);
+}
+
+.primary-btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--light);
+  background: #1dc68d;
+  padding: 14px 45px;
+  border-radius: 4px;
+}
+
+/* Base Styles CSS End */
+
+/* =========***=========
+Login Page CSS
+=========***========= */
+
+/* Login Section CSS Start */
+
+.login-content-container {
+  position: relative;
+  background: var(--primary);
+  height: 100%;
+}
+
+.login-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.login-content .logo img {
+  width: 300px;
+  padding-bottom: 100px;
+}
+
+.login-content h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--light);
+}
+
+.login-content p {
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 40px;
+}
+
+.sign-up-btn {
+  padding-top: 40px;
+}
+
+.top-shape {
+  position: absolute;
+  top: 0;
+}
+
+.bottom-shape {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.login-form-container {
+  max-width: 525px;
+  width: 100%;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.login-title h4 {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: var(--secondary);
+}
+
+.login-title h4::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  width: 180px;
+  height: 3px;
+  background: #97f2d4;
+  border-radius: 12px;
+}
+
+.login-title p {
+  font-size: 15px;
+  line-height: 22px;
+  color: rgba(107, 107, 107, 0.77);
+  padding-top: 10px;
+  opacity: 0.87;
+}
+
+.login-form {
+  padding-top: 80px;
+}
+
+.form-input-field label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #4a4a4a;
+  padding-bottom: 10px;
+}
+
+.form-input-field input {
+  width: 100%;
+  background: #f5f8ff;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+.form-input-field input:focus {
+  outline: 0;
+}
+
+.password-input {
+  width: 100%;
+  background: #f5f8ff;
+  border: none;
+  border-radius: 3px;
+}
+
+::placeholder {
+  color: #4a4a4d;
+}
+
+#eye img {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+}
+
+#eye-on {
+  display: none;
+}
+
+.login-form a {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #c91c1c;
+  padding-top: 20px;
+}
+
+.form-button-field input {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--light);
+  padding: 14px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 4px;
+}
+
+.or {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: #7a7a7a;
+  margin: 50px 0;
+}
+
+.or::before,
+.or::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  width: 40%;
+  height: 1px;
+  background: var(--dark);
+}
+
+.or::before {
+  left: 0;
+}
+
+.or::after {
+  right: 0;
+}
+
+.google-login-btn a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: var(--dark);
+  padding: 15px 0;
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+}
+
+.google-login-btn a img {
+  width: 50px;
+  padding-right: 15px;
+}
+
+/* Login Section CSS End */
