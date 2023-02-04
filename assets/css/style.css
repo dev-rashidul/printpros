@@ -244,6 +244,7 @@ Login Page CSS
   line-height: 24px;
   text-align: center;
   color: var(--dark);
+  background: var(--light);
   padding: 15px 0;
   border: 1px solid var(--dark);
   border-radius: 5px;
@@ -255,3 +256,52 @@ Login Page CSS
 }
 
 /* Login Section CSS End */
+
+/* =========***=========
+Register Page CSS
+=========***========= */
+
+/* Register Section CSS Start */
+
+.already-have-account {
+  background: var(--primary);
+  z-index: 1;
+}
+
+.login-form-container logo img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.login-form-container h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--light);
+  padding-top: 40px;
+}
+
+.already-have-account .login-form {
+  padding-top: 40px;
+}
+
+.already-have-account .form-input-field label,
+.already-have-account .or {
+  color: var(--light);
+}
+
+.already-have-account .or::before,
+.already-have-account .or::after {
+  background: var(--light);
+}
+
+.already-have-account .top-shape,
+.already-have-account .bottom-shape {
+  z-index: -1;
+}
+
+.already-have-account .top-shape img,
+.already-have-account .bottom-shape img {
+  width: 70%;
+}
+
+/* Register Section CSS End */
