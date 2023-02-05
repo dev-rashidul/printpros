@@ -115,7 +115,8 @@ Login Page CSS
   max-width: 520px;
   width: 100%;
   margin: auto;
-  padding: 100px 0;
+  padding-top: 100px;
+  height: 100vh;
 }
 
 .login-title h4 {
@@ -307,11 +308,8 @@ Register Page CSS
 }
 
 .register-content-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 100%;
-  padding: 0 60px;
+  padding: 100px 60px;
 }
 
 .register-form .form-input-field {
@@ -324,3 +322,251 @@ Register Page CSS
 }
 
 /* Register Section CSS End */
+
+/* =========***=========
+Call Page Quote Result Page CSS
+=========***========= */
+
+/* Call Page CSS Start */
+
+.call-quotes-wrapper {
+  display: flex;
+}
+
+#Sidebar {
+  max-width: 320px;
+  width: 320px;
+}
+
+.sidebar-wrapper {
+  position: relative;
+  background: var(--primary);
+  padding: 45px 40px;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.sidebar-logo img {
+  max-width: 230px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 70px;
+}
+
+.sidebar-menu ul li,
+.sidebar-bottom-menu ul li {
+  margin-bottom: 30px;
+}
+
+.sidebar-menu ul li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8d96ac;
+}
+
+.sidebar-menu ul li a img {
+  width: 35px;
+  margin-right: 18px;
+  opacity: 0.7;
+}
+
+.sidebar-menu ul li.active a {
+  color: #ffffff;
+}
+
+.sidebar-menu ul li.active a img {
+  opacity: 1;
+}
+
+.sidebar-bottom-menu {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 50px 20px 0;
+}
+
+.sidebar-bottom-menu ul li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.sidebar-bottom-menu ul li a img {
+  width: 30px;
+  margin-right: 18px;
+}
+
+.logout-btn a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px !important;
+  background: #011c5a;
+  border-radius: 6px;
+}
+
+.logout-btn a img {
+  margin-right: 0px !important;
+}
+
+.sidebar-bottom-menu hr {
+  color: rgba(79, 255, 196, 0.48);
+  opacity: 1;
+  margin: 0 0 40px;
+}
+
+/* Call Quotes Content Section CSS Start */
+
+#Call-quotes-content {
+  flex: 1;
+  padding: 45px 50px;
+}
+
+.call-quotes-content-wrapper h4 {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #1dc68d;
+}
+
+.call-quotes-content-wrapper h4::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  width: 350px;
+  height: 3px;
+  background: #97f2d4;
+  border-radius: 12px;
+}
+
+.call-quotes-table-container {
+  padding-top: 60px;
+}
+
+.call-quotes-table-container > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #02398b;
+  margin: 0;
+  padding-bottom: 8px;
+  opacity: 0.87;
+}
+
+.call-quotes-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #001648;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.call-quotes-table-header h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--light);
+  margin: 0;
+}
+
+.call-quotes-table-header p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #d2e0ff;
+  margin: 0;
+}
+
+.call-quotes-table table {
+  width: 100%;
+  text-align: center;
+}
+
+.call-quotes-table table thead {
+  background: #eff4ff;
+}
+
+.call-quotes-table table thead th {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 0;
+}
+
+.call-quotes-table table tbody tr td {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 0;
+  color: #282828;
+}
+
+.call-quotes-table table tbody tr td img {
+  padding: 0 15px;
+}
+
+.add-item-btn a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #02398b;
+  opacity: 0.87;
+}
+
+.add-item-btn a span {
+  width: 34px;
+  height: 34px;
+  font-size: 20px;
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  margin-right: 15px;
+  border-radius: 100%;
+}
+
+.total-exc h6 {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #717171;
+  margin: 0;
+}
+
+.total-exc h5 {
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #1dc68d;
+  margin: 0;
+}
+
+.save-quote-btn a {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  background: #17daf9;
+  padding: 14px 20px;
+  border-radius: 4px;
+}
+
+.save-quote-btn a img,
+.approve-quote-btn a img {
+  padding-left: 10px;
+}
+
+.approve-quote-btn a {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  background: var(--secondary);
+  padding: 14px 20px;
+  border-radius: 4px;
+}
+
+/* Call Quotes Content Section CSS End */
+
+/* Call Page CSS End */

@@ -1,5 +1,11 @@
 @media (min-width: 1200px) and (max-width: 1700px) {
   .login-form-container {
-    padding: 100px 50px;
+    padding: 100px 50px !important;
+    height: auto;
+  }
+
+  #Sidebar {
+    max-width: 300px;
+    width: 100%;
   }
 }
