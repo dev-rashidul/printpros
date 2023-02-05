@@ -157,7 +157,8 @@ Login Page CSS
   padding-bottom: 10px;
 }
 
-.form-input-field input {
+.form-input-field input,
+.form-input-field select {
   width: 100%;
   background: #f5f8ff;
   padding: 16px 20px;
@@ -165,7 +166,8 @@ Login Page CSS
   border-radius: 3px;
 }
 
-.form-input-field input:focus {
+.form-input-field input:focus,
+.form-input-field select:focus {
   outline: 0;
 }
 
@@ -302,6 +304,23 @@ Register Page CSS
 .already-have-account .top-shape img,
 .already-have-account .bottom-shape img {
   width: 70%;
+}
+
+.register-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 60px;
+}
+
+.register-form .form-input-field {
+  margin-top: 45px;
+}
+
+.register-form .form-button-field input {
+  background: var(--secondary);
+  margin-top: 78px;
 }
 
 /* Register Section CSS End */
