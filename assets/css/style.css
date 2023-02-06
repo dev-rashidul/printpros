@@ -72,9 +72,9 @@ Login Page CSS
 .login-content {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   text-align: center;
+  padding-top: 100px;
 }
 
 .login-content .logo img {
@@ -147,7 +147,7 @@ Login Page CSS
 }
 
 .login-form {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .form-input-field label {
@@ -834,3 +834,76 @@ Orders Page CSS
 }
 
 /* Orders Page CSS End */
+
+/* =========***=========
+My Quotes Page CSS
+=========***========= */
+
+/* My Quotes Section CSS Start */
+
+.my-quotes-wrapper {
+  display: flex;
+}
+
+#Quotes-content {
+  flex: 1;
+  padding: 45px 50px;
+}
+
+.quotes-content-wrapper h4 {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #1dc68d;
+}
+
+.quotes-content-wrapper h4::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  width: 200px;
+  height: 3px;
+  background: #97f2d4;
+  border-radius: 12px;
+}
+
+.quotes-table-container {
+  padding-top: 60px;
+}
+
+.my-quotes-bottom p {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  color: #5c5c5c;
+  padding-right: 60px;
+  margin: 0;
+}
+
+.my-quotes-bottom p::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: -10px;
+  width: 40px;
+  height: 1px;
+  background: rgba(1, 28, 90, 0.48);
+}
+
+.my-quotes-bottom h6 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--secondary);
+  padding-left: 50px;
+  margin: 0;
+}
+
+.my-quotes-bottom .approve-quote-btn {
+  position: relative;
+  margin-top: 60px;
+  padding-left: 60px;
+}
+
+/* My Quotes Section CSS End */

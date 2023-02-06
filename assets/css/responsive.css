@@ -56,4 +56,16 @@
     max-width: 70%;
     width: 100%;
   }
+
+  .my-quotes-bottom p {
+    padding-right: 50px;
+  }
+
+  .my-quotes-bottom h6 {
+    padding-left: 30px;
+  }
+
+  .my-quotes-bottom .approve-quote-btn {
+    padding-left: 40px;
+  }
 }
