@@ -495,11 +495,21 @@ Call Page Quote Result Page CSS
   padding: 15px 0;
 }
 
+.call-quotes-table table tbody tr td:first-child {
+  text-align: left;
+  padding-left: 20px;
+}
+
 .call-quotes-table table tbody tr td {
   font-size: 14px;
   font-weight: 500;
   padding: 15px 0;
   color: #282828;
+}
+
+.call-quotes-table table thead th:first-child {
+  text-align: left;
+  padding-left: 20px;
 }
 
 .call-quotes-table table tbody tr td img {
