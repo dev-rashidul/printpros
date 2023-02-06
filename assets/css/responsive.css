@@ -27,6 +27,14 @@
     color: var(--light);
   }
 
+  .get-quote-form .form-input-field {
+    margin-top: 40px;
+  }
+
+  .get-quote-form .form-button-field {
+    margin-top: 40px;
+  }
+
   .account-details-form-wrapper .logo {
     width: 300px;
   }
