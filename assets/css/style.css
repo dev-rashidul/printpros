@@ -703,3 +703,19 @@ Get Quote and RFQ Page CSS
 }
 
 /* Get Quote Form CSS End */
+
+/* =========***=========
+Account Details Page CSS
+=========***========= */
+
+/* Account Details Page CSS Start */
+
+.account-details-wrapper {
+  display: flex;
+}
+
+#Account-details-form {
+  flex: 1;
+}
+
+/* Account Details Page CSS End */
