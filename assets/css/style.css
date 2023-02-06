@@ -462,7 +462,7 @@ Call Page Quote Result Page CSS
   opacity: 0.87;
 }
 
-.call-quotes-table-header {
+.table-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -471,53 +471,60 @@ Call Page Quote Result Page CSS
   border-radius: 5px 5px 0px 0px;
 }
 
-.call-quotes-table-header h6 {
+.table-header h6 {
   font-size: 18px;
   font-weight: 600;
   color: var(--light);
   margin: 0;
 }
 
-.call-quotes-table-header p {
+.table-header h6 span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ccdcff;
+  margin: 0;
+}
+
+.table-header p {
   font-size: 16px;
   font-weight: 500;
   color: #d2e0ff;
   margin: 0;
 }
 
-.call-quotes-table table {
+table {
   width: 100%;
   text-align: center;
 }
 
-.call-quotes-table table thead {
+table thead {
   background: #eff4ff;
 }
 
-.call-quotes-table table thead th {
+table thead th {
   font-size: 14px;
   font-weight: 500;
   padding: 15px 0;
 }
 
-.call-quotes-table table tbody tr td:first-child {
+table tbody tr td:first-child {
   text-align: left;
   padding-left: 20px;
 }
 
-.call-quotes-table table tbody tr td {
+table tbody tr td {
   font-size: 14px;
   font-weight: 500;
   padding: 15px 0;
   color: #282828;
 }
 
-.call-quotes-table table thead th:first-child {
+table thead th:first-child {
   text-align: left;
   padding-left: 20px;
 }
 
-.call-quotes-table table tbody tr td img {
+table tbody tr td img {
   padding: 0 15px;
 }
 
@@ -769,3 +776,61 @@ Account Details Page CSS
 }
 
 /* Account Details Page CSS End */
+
+/* =========***=========
+Orders Page CSS
+=========***========= */
+
+/* Orders Page CSS Start */
+
+.my-orders-wrapper {
+  display: flex;
+}
+
+#Order-content {
+  flex: 1;
+  padding: 45px 50px;
+}
+
+.order-content-wrapper h4 {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #1dc68d;
+}
+
+.order-content-wrapper h4::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  width: 200px;
+  height: 3px;
+  background: #97f2d4;
+  border-radius: 12px;
+}
+
+.order-table-container {
+  padding-top: 60px;
+}
+
+.order-table-container2 {
+  padding-top: 150px;
+}
+
+.view-details-btn a {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  background: var(--secondary);
+  padding: 18px 20px 18px 30px;
+  border-radius: 4px;
+}
+
+.view-details-btn img {
+  padding-left: 10px;
+}
+
+/* Orders Page CSS End */
