@@ -159,16 +159,18 @@ Login Page CSS
 }
 
 .form-input-field input,
-.form-input-field select {
+.form-input-field select,
+.form-input-field textarea {
   width: 100%;
   background: #f5f8ff;
   padding: 16px 20px;
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .form-input-field input:focus,
-.form-input-field select:focus {
+.form-input-field select:focus,
+.form-input-field textarea:focus {
   outline: 0;
 }
 
@@ -580,3 +582,124 @@ Call Page Quote Result Page CSS
 /* Call Quotes Content Section CSS End */
 
 /* Call Page CSS End */
+
+/* =========***=========
+Get Quote and RFQ Page CSS
+=========***========= */
+
+/* Get Quote Form CSS Start */
+
+.get-quote-wrapper {
+  display: flex;
+}
+
+.get-quote-title {
+  max-width: 400px;
+  width: 100%;
+}
+
+.get-quote-title h4 {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: var(--secondary);
+}
+
+.get-quote-title h4::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  width: 260px;
+  height: 3px;
+  background: #97f2d4;
+  border-radius: 12px;
+}
+
+.get-quote-title p {
+  font-size: 15px;
+  line-height: 22px;
+  color: rgba(107, 107, 107, 0.77);
+  padding-top: 10px;
+  opacity: 0.87;
+}
+
+#Get-quote-content-wrapper {
+  flex: 1;
+}
+
+.get-quote-form-container {
+  padding: 45px 75px;
+}
+
+.get-quote-form .form-input-field {
+  margin-top: 55px;
+}
+
+.get-quote-form .form-button-field {
+  margin-top: 60px;
+}
+
+.get-quote-form .form-button-field button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--light);
+  background: var(--secondary);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+.get-quote-content-container {
+  position: relative;
+  background: linear-gradient(rgba(0, 22, 72, 0.93), rgba(0, 22, 72, 0.93)),
+    url(../images/get-quote-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100%;
+  margin-left: 30px;
+}
+
+.rfq-quote-content-container {
+  background: linear-gradient(rgba(0, 22, 72, 0.93), rgba(0, 22, 72, 0.93)),
+    url(../images/rfq-bg.png);
+}
+
+.get-quote-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.get-quote-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 160px;
+}
+
+.get-quote-content h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--light);
+}
+
+.get-quote-content h2 span {
+  color: var(--secondary);
+}
+
+.get-quote-content p {
+  font-size: 16px;
+  line-height: 29px;
+  color: var(--light);
+  padding-top: 5px;
+}
+
+/* Get Quote Form CSS End */

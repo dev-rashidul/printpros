@@ -8,4 +8,22 @@
     max-width: 300px;
     width: 100%;
   }
+
+  .get-quote-form-container {
+    padding: 45px 50px;
+  }
+
+  .get-quote-content-container {
+    margin-left: 0px;
+  }
+
+  .get-quote-content {
+    padding: 0 50px;
+  }
+
+  .get-quote-content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--light);
+  }
 }
