@@ -162,6 +162,9 @@ Login Page CSS
 .form-input-field select,
 .form-input-field textarea {
   width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #252323;
   background: #f5f8ff;
   padding: 16px 20px;
   border: none;
@@ -205,7 +208,7 @@ Login Page CSS
 
 .form-button-field input {
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--light);
   padding: 14px;
@@ -367,7 +370,7 @@ Call Page Quote Result Page CSS
 }
 
 .sidebar-menu ul li a img {
-  width: 35px;
+  width: 30px;
   margin-right: 18px;
   opacity: 0.7;
 }
@@ -716,6 +719,53 @@ Account Details Page CSS
 
 #Account-details-form {
   flex: 1;
+}
+
+.account-details-form-wrapper {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  padding: 45px 200px;
+}
+
+.account-details-form-wrapper .logo {
+  width: 400px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.account-details-form .form-input-field {
+  margin-top: 40px;
+}
+
+.account-details-form .post-code-field {
+  max-width: 55%;
+  width: 100%;
+}
+
+.account-details-form .form-button-field {
+  max-width: 40%;
+  width: 100%;
+  margin-top: 75px;
+}
+
+.account-details-form .update-profile-btn {
+  margin-top: 0;
+  background: var(--secondary);
+}
+
+.account-details-shape1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.account-details-shape2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 /* Account Details Page CSS End */

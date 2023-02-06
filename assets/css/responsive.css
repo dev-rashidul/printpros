@@ -26,4 +26,26 @@
     font-weight: 500;
     color: var(--light);
   }
+
+  .account-details-form-wrapper .logo {
+    width: 300px;
+  }
+
+  .account-details-form-wrapper {
+    padding: 45px 100px;
+  }
+
+  .account-details-form .form-input-field {
+    margin-top: 30px;
+  }
+
+  .account-details-shape2 {
+    right: -45px;
+  }
+
+  .account-details-shape1 img,
+  .account-details-shape2 img {
+    max-width: 70%;
+    width: 100%;
+  }
 }
