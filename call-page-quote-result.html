@@ -188,6 +188,88 @@
                   <a class="d-flex align-items-center" href="#"
                     ><span>+</span> Add New Item</a
                   >
+                  <!-- Add Item Popup HTML Start -->
+
+                  <div id="Add-item-popup">
+                    <div class="add-item-pop-up-wrapper">
+                      <div class="add-item-pop-up-title position-relative">
+                        <h5>Add/Edit Item</h5>
+                        <div id="Cross-icon">
+                          <button>
+                            <img
+                              src="assets/images/cross-icon.svg"
+                              alt="cross-icon"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="add-pop-up-form">
+                        <form>
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="form-input-field mb-5">
+                                <label>Product</label>
+                                <select required>
+                                  <option value="Select Product">
+                                    Select Product
+                                  </option>
+                                  <option value="Select Product2">
+                                    Select Product2
+                                  </option>
+                                </select>
+                              </div>
+                              <div class="form-input-field">
+                                <label>Format</label>
+                                <select required>
+                                  <option value="Select Product Size">
+                                    Select Product Size
+                                  </option>
+                                  <option value="Select Product Size2">
+                                    Select Product Size2
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="form-input-field mb-5">
+                                <label>Type</label>
+                                <select required>
+                                  <option value="Select Product Details">
+                                    Select Product Details
+                                  </option>
+                                  <option value="Select Product Details2">
+                                    Select Product Details2
+                                  </option>
+                                </select>
+                              </div>
+                              <div class="form-input-field mb-5">
+                                <label>Quantity</label>
+                                <select required>
+                                  <option value="How Many?">How Many?</option>
+                                  <option value="How Many?2">How Many?2</option>
+                                </select>
+                              </div>
+                              <div class="add-pop-up-buttons">
+                                <div class="cancel-btn">
+                                  <a href="#">Cancel</a>
+                                </div>
+                                <div class="add-pop-up-btn">
+                                  <button type="button">
+                                    Add Item<img
+                                      src="assets/images/arrow-right.svg"
+                                      alt="arrow-right"
+                                    />
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Add Item Popup HTML End -->
                 </div>
                 <div class="d-flex align-items-center">
                   <div class="total-exc me-5">
@@ -346,5 +428,16 @@
 
     <!-- Custom JavaScript -->
     <script src="assets/js/script.js"></script>
+
+    <script>
+      // Add Item Popup JavaScript
+
+      const addPopup = document.querySelector("#Add-item-popup");
+      const addItemBtn = document.querySelector(".add-item-btn");
+
+      addItemBtn.addEventListener("click", function () {
+        addPopup.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

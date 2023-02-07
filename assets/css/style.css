@@ -79,7 +79,7 @@ Login Page CSS
 
 .login-content .logo img {
   width: 300px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .login-content h3 {
@@ -147,7 +147,7 @@ Login Page CSS
 }
 
 .login-form {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .form-input-field label {
@@ -185,6 +185,8 @@ Login Page CSS
 }
 
 ::placeholder {
+  font-size: 16px;
+  font-weight: 400;
   color: #4a4a4d;
 }
 
@@ -212,7 +214,7 @@ Login Page CSS
   font-weight: 600;
   color: var(--light);
   padding: 14px;
-  margin-top: 50px;
+  margin-top: 40px;
   border: none;
   border-radius: 4px;
 }
@@ -225,7 +227,7 @@ Login Page CSS
   line-height: 24px;
   text-transform: lowercase;
   color: #7a7a7a;
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .or::before,
@@ -276,13 +278,13 @@ Register Page CSS
   z-index: 1;
 }
 
-.login-form-container logo img {
+.login-form-container .logo img {
   max-width: 300px;
   width: 100%;
 }
 
 .login-form-container h3 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--light);
   padding-top: 40px;
@@ -314,7 +316,7 @@ Register Page CSS
 
 .register-content-container {
   height: 100%;
-  padding: 100px 60px;
+  padding: 80px 60px;
 }
 
 .register-form .form-input-field {
@@ -340,7 +342,7 @@ Call Page Quote Result Page CSS
 
 #Sidebar {
   max-width: 320px;
-  width: 320px;
+  width: 100%;
 }
 
 .sidebar-wrapper {
@@ -586,6 +588,7 @@ table tbody tr td img {
   color: #ffffff;
   background: var(--secondary);
   padding: 14px 20px;
+  border: none;
   border-radius: 4px;
 }
 
@@ -819,16 +822,6 @@ Orders Page CSS
   padding-top: 150px;
 }
 
-.view-details-btn a {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-  color: #ffffff;
-  background: var(--secondary);
-  padding: 18px 20px 18px 30px;
-  border-radius: 4px;
-}
-
 .view-details-btn img {
   padding-left: 10px;
 }
@@ -907,3 +900,100 @@ My Quotes Page CSS
 }
 
 /* My Quotes Section CSS End */
+
+/* ===========***===========
+PopUp CSS
+===========***=========== */
+
+#Add-item-popup {
+  display: none;
+}
+
+#Add-item-popup.active {
+  display: block;
+}
+
+.add-item-pop-up-wrapper {
+  max-width: 830px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.add-item-pop-up-title {
+  width: 100%;
+  background: var(--primary);
+  border-radius: 6px;
+}
+
+.add-item-pop-up-title h5 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #fafcff;
+  padding: 25px 0;
+  margin: 0;
+}
+
+#Cross-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#Cross-icon button {
+  background: #000b24;
+  padding: 17px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.add-pop-up-form {
+  padding: 40px;
+}
+
+.add-pop-up-form .form-input-field select {
+  font-weight: 400;
+}
+
+.add-pop-up-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.add-pop-up-buttons .cancel-btn a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  color: #ee1d1d;
+}
+
+.add-pop-up-btn button {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  background: var(--secondary);
+  padding: 8px 20px;
+  margin-left: 60px;
+  border: none;
+  border-radius: 4px;
+}
+
+.add-pop-up-btn button img {
+  padding-left: 10px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+}

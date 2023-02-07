@@ -1,7 +1,8 @@
 @media (min-width: 1200px) and (max-width: 1700px) {
   .login-form-container {
-    padding: 100px 50px !important;
-    height: auto;
+    padding: 80px 50px !important;
+    min-height: 100vh;
+    height: 100%;
   }
 
   #Sidebar {
@@ -10,7 +11,7 @@
   }
 
   .get-quote-form-container {
-    padding: 45px 50px;
+    padding: 45px;
   }
 
   .get-quote-content-container {
@@ -28,7 +29,7 @@
   }
 
   .get-quote-form .form-input-field {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .get-quote-form .form-button-field {
