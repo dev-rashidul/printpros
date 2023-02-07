@@ -733,6 +733,7 @@ Account Details Page CSS
 
 #Account-details-form {
   flex: 1;
+  margin-left: 320px;
 }
 
 .account-details-form-wrapper {
