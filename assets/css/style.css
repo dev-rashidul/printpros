@@ -340,13 +340,6 @@ Call Page Quote Result Page CSS
   display: flex;
 }
 
-#Sidebar {
-  position: fixed;
-  top: 0;
-  max-width: 320px;
-  width: 100%;
-}
-
 .sidebar-wrapper {
   position: relative;
   background: var(--primary);
@@ -369,7 +362,7 @@ Call Page Quote Result Page CSS
 
 .sidebar-menu ul li a {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   color: #8d96ac;
 }
 
@@ -381,6 +374,7 @@ Call Page Quote Result Page CSS
 
 .sidebar-menu ul li.active a {
   color: #ffffff;
+  font-weight: 600;
 }
 
 .sidebar-menu ul li.active a img {
@@ -432,7 +426,6 @@ Call Page Quote Result Page CSS
 #Call-quotes-content {
   flex: 1;
   padding: 45px 50px;
-  margin-left: 320px;
 }
 
 .call-quotes-content-wrapper h4 {
@@ -643,7 +636,6 @@ Get Quote and RFQ Page CSS
 
 #Get-quote-content-wrapper {
   flex: 1;
-  margin-left: 320px;
 }
 
 .get-quote-form-container {
@@ -733,7 +725,6 @@ Account Details Page CSS
 
 #Account-details-form {
   flex: 1;
-  margin-left: 320px;
 }
 
 .account-details-form-wrapper {
@@ -798,7 +789,6 @@ Orders Page CSS
 #Order-content {
   flex: 1;
   padding: 45px 50px;
-  margin-left: 320px;
 }
 
 .order-content-wrapper h4 {
@@ -847,7 +837,6 @@ My Quotes Page CSS
 #Quotes-content {
   flex: 1;
   padding: 45px 50px;
-  margin-left: 320px;
 }
 
 .quotes-content-wrapper h4 {
@@ -996,11 +985,4 @@ PopUp CSS
 
 .add-pop-up-btn button img {
   padding-left: 10px;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: red;
 }
