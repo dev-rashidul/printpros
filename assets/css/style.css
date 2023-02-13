@@ -531,6 +531,7 @@ table tbody tr td img {
   font-weight: 500;
   color: #02398b;
   opacity: 0.87;
+  cursor: pointer;
 }
 
 .add-item-btn a span {
@@ -541,6 +542,7 @@ table tbody tr td img {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   background: var(--primary);
   margin-right: 15px;
   border-radius: 100%;
@@ -566,7 +568,7 @@ table tbody tr td img {
   font-size: 14px;
   font-weight: 600;
   text-align: center;
-  color: #ffffff;
+  color: #ffffff !important;
   background: #17daf9;
   padding: 14px 20px;
   border-radius: 4px;
@@ -581,7 +583,7 @@ table tbody tr td img {
   font-size: 14px;
   font-weight: 600;
   text-align: center;
-  color: #ffffff;
+  color: #ffffff !important;
   background: var(--secondary);
   padding: 14px 20px;
   border: none;
@@ -901,21 +903,9 @@ My Quotes Page CSS
 PopUp CSS
 ===========***=========== */
 
-#Add-item-popup {
-  display: none;
-}
-
-#Add-item-popup.active {
-  display: block;
-}
-
 .add-item-pop-up-wrapper {
   max-width: 830px;
   width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: #ffffff;
   box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -940,6 +930,7 @@ PopUp CSS
   position: absolute;
   top: 0;
   right: 0;
+  cursor: pointer;
 }
 
 #Cross-icon button {
@@ -947,6 +938,7 @@ PopUp CSS
   padding: 17px;
   border: 0;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .add-pop-up-form {
@@ -985,4 +977,290 @@ PopUp CSS
 
 .add-pop-up-btn button img {
   padding-left: 10px;
+}
+
+.modal-content {
+  background: none;
+  border: none;
+}
+
+#SAModal .modal-dialog,
+#SBModal .modal-dialog {
+  max-width: 800px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: unset;
+  margin-left: unset;
+  z-index: 99999;
+}
+
+/* View Details PopUp */
+
+#SAViewModal .modal-dialog {
+  max-width: 800px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: unset;
+  margin-left: unset;
+}
+
+.view-details-modal {
+  max-width: 830px;
+  width: 100%;
+  background: #ffffff;
+  padding-bottom: 50px;
+  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.view-order-table-header {
+  background: #e5edff;
+  padding: 15px 20px;
+}
+
+.view-order-table-header p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #001648;
+  margin: 0;
+}
+
+.view-order-table-header p span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.order-details-total h6 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #001648;
+}
+
+.order-details-total h6 span {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1dc68d;
+}
+
+.view-details-modal .order-table-container {
+  padding-top: 0px;
+}
+
+.order-details-back-btn {
+  padding: 40px 20px 0 0;
+}
+
+.order-details-back-btn a {
+  font-size: 16px;
+  color: var(--light);
+  background: #1dc68d;
+  padding: 14px 50px;
+  border-radius: 4px;
+}
+
+/* Save Quote Modal */
+
+#saveQuoteModal .modal-dialog {
+  max-width: 900px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: unset;
+  margin-left: unset;
+}
+
+.save-quote-modal-wrapper {
+  background: #02398b;
+  padding: 100px 150px;
+}
+
+.save-quote-modal-content h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.save-quote-filed label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #d2e0ff;
+  padding-bottom: 10px;
+}
+
+.save-quote-filed input {
+  max-width: 400px;
+  width: 100%;
+  background: #f5f8ff;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+.save-quote-filed input:focus {
+  outline: 0;
+}
+
+.save-quote-modal-btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 14px 40px;
+  background: linear-gradient(106.71deg, #1dc68d 8.45%, #1d6bc6 141.94%);
+  border: none;
+  border-radius: 4px;
+}
+
+.save-quote-cancel-btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-left: 30px;
+  background: transparent;
+  margin: 0;
+  cursor: pointer;
+}
+
+.save-quote-modal-content span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.save-quote-shape1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Save Quote Modal 2 */
+
+#saveQuoteModal2 .modal-dialog {
+  max-width: 900px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: unset;
+  margin-left: unset;
+}
+
+.save-quote-modal-wrapper2 {
+  background: #1dc68d;
+  padding: 100px;
+}
+
+.save-quote-modal-content2 h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #070707;
+  margin-bottom: 40px;
+}
+
+.save-quote-modal-content2 p {
+  color: #0c0c0c;
+}
+
+.go-to-quotes,
+.my-quotes {
+  display: block;
+  width: 160px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 16px !important;
+  color: #ffffff !important;
+  border-radius: 4px;
+}
+
+.go-to-quotes {
+  background: #02398b !important;
+}
+
+.my-quotes {
+  margin-left: 30px;
+  background: #0ba8eb !important;
+}
+
+.save-quote-shape2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Order ConfirmationModal Modal */
+
+#orderConfirmationModal .modal-dialog {
+  max-width: 900px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: unset;
+  margin-left: unset;
+}
+
+.order-confirmation-modal {
+  background: #02398b;
+}
+
+.order-confirmation-modal-wrapper {
+  padding: 100px;
+}
+
+.order-confirmation-modal h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.order-confirmation-modal h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.order-confirmation-modal p {
+  color: #ffffff;
+}
+
+.order-confirmation-modal p span {
+  color: #68aeff;
+}
+
+.order-confirmation-shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.log-out-btn,
+.my-orders-btn {
+  display: block;
+  width: 160px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 16px !important;
+  color: #ffffff !important;
+  border-radius: 4px;
+}
+
+.log-out-btn {
+  background: #1dc68d !important;
+}
+
+.my-orders-btn {
+  margin-left: 30px;
+  background: #0ba8eb !important;
 }

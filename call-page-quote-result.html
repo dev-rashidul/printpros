@@ -185,86 +185,115 @@
             <div class="call-quotes-table-bottom pt-5">
               <div class="d-flex justify-content-between align-items-center">
                 <div class="add-item-btn">
-                  <a class="d-flex align-items-center" href="#"
+                  <a
+                    class="d-flex align-items-center"
+                    data-bs-toggle="modal"
+                    data-bs-target="#SAModal"
                     ><span>+</span> Add New Item</a
                   >
                   <!-- Add Item Popup HTML Start -->
 
-                  <div id="Add-item-popup">
-                    <div class="add-item-pop-up-wrapper">
-                      <div class="add-item-pop-up-title position-relative">
-                        <h5>Add/Edit Item</h5>
-                        <div id="Cross-icon">
-                          <button>
-                            <img
-                              src="assets/images/cross-icon.svg"
-                              alt="cross-icon"
-                            />
-                          </button>
-                        </div>
-                      </div>
-                      <div class="add-pop-up-form">
-                        <form>
-                          <div class="row">
-                            <div class="col-6">
-                              <div class="form-input-field mb-5">
-                                <label>Product</label>
-                                <select required>
-                                  <option value="Select Product">
-                                    Select Product
-                                  </option>
-                                  <option value="Select Product2">
-                                    Select Product2
-                                  </option>
-                                </select>
-                              </div>
-                              <div class="form-input-field">
-                                <label>Format</label>
-                                <select required>
-                                  <option value="Select Product Size">
-                                    Select Product Size
-                                  </option>
-                                  <option value="Select Product Size2">
-                                    Select Product Size2
-                                  </option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <div class="form-input-field mb-5">
-                                <label>Type</label>
-                                <select required>
-                                  <option value="Select Product Details">
-                                    Select Product Details
-                                  </option>
-                                  <option value="Select Product Details2">
-                                    Select Product Details2
-                                  </option>
-                                </select>
-                              </div>
-                              <div class="form-input-field mb-5">
-                                <label>Quantity</label>
-                                <select required>
-                                  <option value="How Many?">How Many?</option>
-                                  <option value="How Many?2">How Many?2</option>
-                                </select>
-                              </div>
-                              <div class="add-pop-up-buttons">
-                                <div class="cancel-btn">
-                                  <a href="#">Cancel</a>
-                                </div>
-                                <div class="add-pop-up-btn">
-                                  <button type="button">
-                                    Add Item<img
-                                      src="assets/images/arrow-right.svg"
-                                      alt="arrow-right"
+                  <div
+                    class="modal"
+                    id="SAModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div id="Add-item-popup">
+                            <div class="add-item-pop-up-wrapper">
+                              <div
+                                class="add-item-pop-up-title position-relative"
+                              >
+                                <h5>Add/Edit Item</h5>
+                                <div id="Cross-icon" data-bs-dismiss="modal">
+                                  <button>
+                                    <img
+                                      src="assets/images/cross-icon.svg"
+                                      alt="cross-icon"
                                     />
                                   </button>
                                 </div>
                               </div>
+                              <div class="add-pop-up-form">
+                                <form>
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <div class="form-input-field mb-5">
+                                        <label>Product</label>
+                                        <select required>
+                                          <option value="Select Product">
+                                            Select Product
+                                          </option>
+                                          <option value="Select Product2">
+                                            Select Product2
+                                          </option>
+                                        </select>
+                                      </div>
+                                      <div class="form-input-field">
+                                        <label>Format</label>
+                                        <select required>
+                                          <option value="Select Product Size">
+                                            Select Product Size
+                                          </option>
+                                          <option value="Select Product Size2">
+                                            Select Product Size2
+                                          </option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-6">
+                                      <div class="form-input-field mb-5">
+                                        <label>Type</label>
+                                        <select required>
+                                          <option
+                                            value="Select Product Details"
+                                          >
+                                            Select Product Details
+                                          </option>
+                                          <option
+                                            value="Select Product Details2"
+                                          >
+                                            Select Product Details2
+                                          </option>
+                                        </select>
+                                      </div>
+                                      <div class="form-input-field mb-5">
+                                        <label>Quantity</label>
+                                        <select required>
+                                          <option value="How Many?">
+                                            How Many?
+                                          </option>
+                                          <option value="How Many?2">
+                                            How Many?2
+                                          </option>
+                                        </select>
+                                      </div>
+                                      <div class="add-pop-up-buttons">
+                                        <div class="cancel-btn">
+                                          <a href="#" data-bs-dismiss="modal"
+                                            >Cancel</a
+                                          >
+                                        </div>
+                                        <div class="add-pop-up-btn">
+                                          <button type="button">
+                                            Add Item<img
+                                              src="assets/images/arrow-right.svg"
+                                              alt="arrow-right"
+                                            />
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
                             </div>
                           </div>
-                        </form>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -281,20 +310,169 @@
                     <h5>$3860.20</h5>
                   </div>
                   <div class="save-quote-btn me-4">
-                    <a href="#"
+                    <a data-bs-toggle="modal" data-bs-target="#saveQuoteModal"
                       >Save Quote
                       <img
                         src="assets/images/arrow-right.svg"
                         alt="arrow-right"
                     /></a>
+
+                    <!-- Save Quote Popup -->
+
+                    <div
+                      class="modal fade"
+                      id="saveQuoteModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="save-quote-modal">
+                              <div
+                                class="save-quote-modal-wrapper position-relative"
+                              >
+                                <div class="save-quote-modal-content">
+                                  <h3>
+                                    <img
+                                      src="assets/images/get-quote.svg"
+                                      alt="get-quote"
+                                    />
+                                    Save Your Quote
+                                  </h3>
+                                  <form>
+                                    <div class="save-quote-modal-form pt-4">
+                                      <div class="save-quote-filed">
+                                        <label
+                                          >Give your quote a name so you can
+                                          find it later*</label
+                                        >
+                                        <input
+                                          type="text"
+                                          placeholder="Enter Name"
+                                          required
+                                        />
+                                      </div>
+                                      <div
+                                        class="save-quote-modal-buttons d-flex align-items-center pt-4"
+                                      >
+                                        <button
+                                          class="save-quote-modal-btn"
+                                          type="submit"
+                                        >
+                                          Save Quote
+                                        </button>
+                                        <p
+                                          data-bs-dismiss="modal"
+                                          class="save-quote-cancel-btn"
+                                        >
+                                          Cancel
+                                        </p>
+                                      </div>
+                                      <span
+                                        >Your quote will be saved in your MY
+                                        QUOTES area All quotes are only valid
+                                        for 14 days*</span
+                                      >
+                                    </div>
+                                  </form>
+                                </div>
+                                <div class="save-quote-shape1">
+                                  <img
+                                    src="assets/images/save-quote-shape1.svg"
+                                    alt="save-quote-shape1"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Save Quote Popup -->
                   </div>
                   <div class="approve-quote-btn">
-                    <a href="#"
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#orderConfirmationModal"
                       >Approve Quote
                       <img
                         src="assets/images/arrow-right.svg"
                         alt="arrow-right"
                     /></a>
+
+                    <!-- Save Quote Popup -->
+
+                    <div
+                      class="modal fade"
+                      id="orderConfirmationModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="order-confirmation-modal">
+                              <div
+                                class="order-confirmation-modal-wrapper position-relative"
+                              >
+                                <div class="order-confirmation-modal-content">
+                                  <h3>
+                                    <img
+                                      src="assets/images/orders.svg"
+                                      alt="orders"
+                                    />
+                                    Your Order Confirmed
+                                  </h3>
+                                  <h5>What Happens Next?</h5>
+                                  <p>
+                                    You will receive an email from us with the
+                                    artwork specifications for the printer you
+                                    have selected. Artwork needs to be provided
+                                    exactly as requested.
+                                  </p>
+                                  <p>
+                                    We will hunt for the best freight quote for
+                                    you from the printer to your door. Approve
+                                    the freight first. Please let us know if you
+                                    are sending direct to your customer.
+                                  </p>
+                                  <p>
+                                    Once freight is approved and artwork
+                                    provided to spec we will send you an
+                                    invoice. Your job will enter the print queue
+                                    on the day of your payment.
+                                  </p>
+                                  <p>
+                                    <span
+                                      >You can track the progress of your order
+                                      in MY ORDERS
+                                    </span>
+                                  </p>
+                                  <div class="d-flex pt-4">
+                                    <a class="log-out-btn" href="#">Log Out</a>
+                                    <a class="my-orders-btn" href="#"
+                                      >My Orders</a
+                                    >
+                                  </div>
+                                </div>
+                                <div class="order-confirmation-shape">
+                                  <img
+                                    src="assets/images/order-confirmation-shape.svg"
+                                    alt="order-confirmation-shape"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Save Quote Popup -->
                   </div>
                 </div>
               </div>
@@ -384,9 +562,120 @@
             <div class="call-quotes-table-bottom pt-5">
               <div class="d-flex justify-content-between align-items-center">
                 <div class="add-item-btn">
-                  <a class="d-flex align-items-center" href="#"
+                  <a
+                    class="d-flex align-items-center"
+                    data-bs-toggle="modal"
+                    data-bs-target="#SBModal"
                     ><span>+</span> Add New Item</a
                   >
+                  <!-- Add Item Popup HTML Start -->
+
+                  <div
+                    class="modal"
+                    id="SBModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div id="Add-item-popup">
+                            <div class="add-item-pop-up-wrapper">
+                              <div
+                                class="add-item-pop-up-title position-relative"
+                              >
+                                <h5>Add/Edit Item</h5>
+                                <div id="Cross-icon" data-bs-dismiss="modal">
+                                  <button>
+                                    <img
+                                      src="assets/images/cross-icon.svg"
+                                      alt="cross-icon"
+                                    />
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="add-pop-up-form">
+                                <form>
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <div class="form-input-field mb-5">
+                                        <label>Product</label>
+                                        <select required>
+                                          <option value="Select Product">
+                                            Select Product
+                                          </option>
+                                          <option value="Select Product2">
+                                            Select Product2
+                                          </option>
+                                        </select>
+                                      </div>
+                                      <div class="form-input-field">
+                                        <label>Format</label>
+                                        <select required>
+                                          <option value="Select Product Size">
+                                            Select Product Size
+                                          </option>
+                                          <option value="Select Product Size2">
+                                            Select Product Size2
+                                          </option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-6">
+                                      <div class="form-input-field mb-5">
+                                        <label>Type</label>
+                                        <select required>
+                                          <option
+                                            value="Select Product Details"
+                                          >
+                                            Select Product Details
+                                          </option>
+                                          <option
+                                            value="Select Product Details2"
+                                          >
+                                            Select Product Details2
+                                          </option>
+                                        </select>
+                                      </div>
+                                      <div class="form-input-field mb-5">
+                                        <label>Quantity</label>
+                                        <select required>
+                                          <option value="How Many?">
+                                            How Many?
+                                          </option>
+                                          <option value="How Many?2">
+                                            How Many?2
+                                          </option>
+                                        </select>
+                                      </div>
+                                      <div class="add-pop-up-buttons">
+                                        <div class="cancel-btn">
+                                          <a href="#" data-bs-dismiss="modal"
+                                            >Cancel</a
+                                          >
+                                        </div>
+                                        <div class="add-pop-up-btn">
+                                          <button type="button">
+                                            Add Item<img
+                                              src="assets/images/arrow-right.svg"
+                                              alt="arrow-right"
+                                            />
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Add Item Popup HTML End -->
                 </div>
                 <div class="d-flex align-items-center">
                   <div class="total-exc me-5">
@@ -398,20 +687,158 @@
                     <h5>$3860.20</h5>
                   </div>
                   <div class="save-quote-btn me-4">
-                    <a href="#"
+                    <a data-bs-toggle="modal" data-bs-target="#saveQuoteModal2"
                       >Save Quote
                       <img
                         src="assets/images/arrow-right.svg"
                         alt="arrow-right"
                     /></a>
+
+                    <!-- Save Quote Popup -->
+
+                    <div
+                      class="modal fade"
+                      id="saveQuoteModal2"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="save-quote-modal2">
+                              <div
+                                class="save-quote-modal-wrapper2 position-relative"
+                              >
+                                <div class="save-quote-modal-content2">
+                                  <h3>
+                                    <img
+                                      src="assets/images/like-icon.svg"
+                                      alt="like-icon"
+                                    />
+                                    Your Quote Has Been Saved
+                                  </h3>
+                                  <p>
+                                    Your quote has been saved and can be
+                                    accessed in the My Quotes section. Quotes
+                                    are valid for 14 days from the time you
+                                    clicked save.
+                                  </p>
+                                  <p>
+                                    Our suppliers don’t change their prices all
+                                    that often but you will need to requote if
+                                    you are confirming outside of the two week
+                                    period. If you want to make changes to the
+                                    existing quote, you will also need to get a
+                                    new quote.
+                                  </p>
+                                  <p>
+                                    Please call us on 1800 957 399 if you have
+                                    any questions about your quote or using the
+                                    Printprops platform.
+                                  </p>
+                                  <div class="d-flex pt-4">
+                                    <a class="go-to-quotes" href="#"
+                                      >Go to My Quotes</a
+                                    >
+                                    <a class="my-quotes" href="#">New Quote</a>
+                                  </div>
+                                </div>
+                                <div class="save-quote-shape2">
+                                  <img
+                                    src="assets/images/save-quote-shape2.svg"
+                                    alt="save-quote-shape2"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Save Quote Popup -->
                   </div>
                   <div class="approve-quote-btn">
-                    <a href="#"
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#orderConfirmationModal"
                       >Approve Quote
                       <img
                         src="assets/images/arrow-right.svg"
                         alt="arrow-right"
                     /></a>
+
+                    <!-- Save Quote Popup -->
+
+                    <div
+                      class="modal fade"
+                      id="orderConfirmationModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <div class="order-confirmation-modal">
+                              <div
+                                class="order-confirmation-modal-wrapper position-relative"
+                              >
+                                <div class="order-confirmation-modal-content">
+                                  <h3>
+                                    <img
+                                      src="assets/images/orders.svg"
+                                      alt="orders"
+                                    />
+                                    Your Order Confirmed
+                                  </h3>
+                                  <h5>What Happens Next?</h5>
+                                  <p>
+                                    You will receive an email from us with the
+                                    artwork specifications for the printer you
+                                    have selected. Artwork needs to be provided
+                                    exactly as requested.
+                                  </p>
+                                  <p>
+                                    We will hunt for the best freight quote for
+                                    you from the printer to your door. Approve
+                                    the freight first. Please let us know if you
+                                    are sending direct to your customer.
+                                  </p>
+                                  <p>
+                                    Once freight is approved and artwork
+                                    provided to spec we will send you an
+                                    invoice. Your job will enter the print queue
+                                    on the day of your payment.
+                                  </p>
+                                  <p>
+                                    <span
+                                      >You can track the progress of your order
+                                      in MY ORDERS
+                                    </span>
+                                  </p>
+                                  <div class="d-flex pt-4">
+                                    <a class="log-out-btn" href="#">Log Out</a>
+                                    <a class="my-orders-btn" href="#"
+                                      >My Orders</a
+                                    >
+                                  </div>
+                                </div>
+                                <div class="order-confirmation-shape">
+                                  <img
+                                    src="assets/images/order-confirmation-shape.svg"
+                                    alt="order-confirmation-shape"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Save Quote Popup -->
                   </div>
                 </div>
               </div>
@@ -428,16 +855,5 @@
 
     <!-- Custom JavaScript -->
     <script src="assets/js/script.js"></script>
-
-    <script>
-      // Add Item Popup JavaScript
-
-      const addPopup = document.querySelector("#Add-item-popup");
-      const addItemBtn = document.querySelector(".add-item-btn");
-
-      addItemBtn.addEventListener("click", function () {
-        addPopup.classList.toggle("active");
-      });
-    </script>
   </body>
 </html>
